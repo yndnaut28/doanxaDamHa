@@ -25,10 +25,15 @@
     </header>
     
     <section class="video-section">
-        <video controls autoplay loop muted>
-            <source src="https://www.youtube.com/watch?v=qTmB9mtoPFs" type="video/mp4">
-                Trình duyệt của bạn không hỗ trợ video.
-        </video>
+        <div class="video-player-container">
+            <iframe 
+                src="https://www.youtube.com/embed/qTmB9mtoPFs?autoplay=1&loop=1&mute=1&playlist=qTmB9mtoPFs" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+        </div>
     </section>
 
     <div class="search-bar">
@@ -750,6 +755,7 @@
 </body>
 
 </html>
+
 
 
 
