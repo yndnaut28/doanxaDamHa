@@ -339,6 +339,7 @@ footer .lienlac a:hover {
 }
 #in4 img{
     width: 300px;
+    height: 300px;
     object-fit: cover;
     /* Tạo dải mờ từ trái sang phải và từ trên xuống dưới */
     -webkit-mask-image: 
@@ -845,4 +846,5 @@ position: relative;
       font-size: 11px;
     }
 }
+
 
