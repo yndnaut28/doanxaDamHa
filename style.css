@@ -714,11 +714,17 @@ position: relative;
         font-size: 8px;
         text-align: center;
     }
-    .card::before{
-        width: 0px; 
-        height: 0px;
-        margin-left:0px;
-        margin-top:0px;
+    .card::before {
+        display: none !important;    /* Ẩn hoàn toàn khỏi cấu trúc trang */
+        animation: none !important;  /* Tắt hoàn toàn chuyển động */
+        content: none;               /* Hủy nội dung giả */
+        background: none;            /* Xóa màu nền */
+    }
+    
+    /* Đảm bảo khi chạm tay vào (hover trên mobile) cũng không hiện lại */
+    .card:hover::before {
+        display: none !important;
+        opacity: 0 !important;
     }
     #ntlg {
         flex-direction: row;
@@ -910,6 +916,7 @@ position: relative;
       font-size: 11px;
     }
 }
+
 
 
 
