@@ -668,6 +668,28 @@ position: relative;
         align-items: flex-start;
         text-align: left;
     }
+    .card {
+      z-index: 0;
+    }
+    .card-img{
+        z-index: 0;
+    }
+    .card-img img {
+      z-index: 0;
+    }
+    
+    .card-text {
+        z-index: 0;
+    }.card-text h3 {
+        z-index: 0;
+    }
+    .card-text p {
+        z-index: 0;
+    }
+
+    .card-footer {
+        z-index: 0;
+    }
     .card::before {
         display: none !important;    /* Ẩn hoàn toàn khỏi cấu trúc trang */
         animation: none !important;  /* Tắt hoàn toàn chuyển động */
@@ -913,6 +935,7 @@ position: relative;
       font-size: 11px;
     }
 }
+
 
 
 
