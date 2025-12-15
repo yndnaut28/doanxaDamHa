@@ -715,8 +715,10 @@ position: relative;
         text-align: center;
     }
     .card::before{
-        content: "";
-        position: absolute;
+        width: 0px; 
+        height: 0px;
+        margin-left:0px;
+        margin-top:0px;
     }
     #ntlg {
         flex-direction: row;
@@ -908,6 +910,7 @@ position: relative;
       font-size: 11px;
     }
 }
+
 
 
 
