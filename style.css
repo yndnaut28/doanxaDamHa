@@ -64,6 +64,7 @@ header{
     inset: 5px;
     background: #ffffff;
     border-radius: 10px;
+    z-index: 0;
 }
 
 #ntlg{
@@ -271,7 +272,10 @@ input:focus {
 .card-footer a:hover {
   background: #2549ff;
 }
-
+.card-img, .card-text, .card-footer {
+    position: relative; 
+    z-index: 10; /* Z-index cao hơn hẳn nền trắng */
+}
 .map-btn::after {
   content: "";
   position: absolute;
@@ -302,7 +306,11 @@ input:focus {
   transform: scale(0.95);
   background: #2549ff;
 }
-
+.card-footer a.map-btn {
+    position: relative;
+    overflow: hidden;
+    z-index: 20;  
+}
 
 /* FOOTER =================================================================================================*/
 footer {
@@ -935,6 +943,7 @@ position: relative;
       font-size: 11px;
     }
 }
+
 
 
 
