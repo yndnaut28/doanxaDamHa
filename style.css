@@ -681,6 +681,11 @@ position: relative;
         background: none;            /* Xóa màu nền */
         width: 0 !important;
         height: 0 !important;
+    
+    }
+    .card::after {
+        display: none !important;
+        content: none !important;
     }
     
     /* Đảm bảo khi chạm tay vào (hover trên mobile) cũng không hiện lại */
@@ -921,6 +926,7 @@ position: relative;
       font-size: 11px;
     }
 }
+
 
 
 
