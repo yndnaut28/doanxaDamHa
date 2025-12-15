@@ -38,10 +38,10 @@ header{
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 150%; 
-    height: 150%;
-    margin-left: -75%;
-    margin-top: -75%;
+    width: 600px; 
+    height: 600px;
+    margin-left: -300px;
+    margin-top: -300px;
     border-radius: 50%;
     z-index: -2; 
     background: #e0e0e0;
@@ -714,6 +714,10 @@ position: relative;
         font-size: 8px;
         text-align: center;
     }
+    .card::before{
+        content: "";
+        position: absolute;
+    }
     #ntlg {
         flex-direction: row;
         align-items: center;
@@ -904,6 +908,7 @@ position: relative;
       font-size: 11px;
     }
 }
+
 
 
 
