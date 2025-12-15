@@ -68,7 +68,7 @@ header{
 
 #ntlg{
     display: flex;
-    width: 100%;
+    flex: 1;
     justify-content: space-between;
     align-items: center; 
 }
@@ -668,6 +668,18 @@ position: relative;
         align-items: flex-start;
         text-align: left;
     }
+    .card::before {
+        display: none !important;    /* Ẩn hoàn toàn khỏi cấu trúc trang */
+        animation: none !important;  /* Tắt hoàn toàn chuyển động */
+        content: none;               /* Hủy nội dung giả */
+        background: none;            /* Xóa màu nền */
+    }
+    
+    /* Đảm bảo khi chạm tay vào (hover trên mobile) cũng không hiện lại */
+    .card:hover::before {
+        display: none !important;
+        opacity: 0 !important;
+    }
     #in4 img {
         width: 100%; /* Chiếm 100% chiều rộng */
         max-width: 100%;
@@ -710,18 +722,6 @@ position: relative;
     #namelogo {
         font-size: 8px;
         text-align: center;
-    }
-    .card::before {
-        display: none !important;    /* Ẩn hoàn toàn khỏi cấu trúc trang */
-        animation: none !important;  /* Tắt hoàn toàn chuyển động */
-        content: none;               /* Hủy nội dung giả */
-        background: none;            /* Xóa màu nền */
-    }
-    
-    /* Đảm bảo khi chạm tay vào (hover trên mobile) cũng không hiện lại */
-    .card:hover::before {
-        display: none !important;
-        opacity: 0 !important;
     }
     #ntlg {
         flex-direction: row;
@@ -835,9 +835,9 @@ position: relative;
         font-size: 20px; /* Cỡ chữ Vừa (~16px) */
     }
     .search-bar {
-        margin-left: 30px;
-        flex-direction: column; /* Xếp dọc */
-        width: 80%;
+        margin: 20px auto;  /* <-- THAY BẰNG DÒNG NÀY (Căn giữa tuyệt đối) */
+        flex-direction: column; 
+        width: 90%;
     }
     .search-bar input,
     .custom-select {
@@ -913,6 +913,7 @@ position: relative;
       font-size: 11px;
     }
 }
+
 
 
 
