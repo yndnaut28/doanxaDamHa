@@ -394,7 +394,7 @@ footer .lienlac a:hover {
 
     /* Thuộc tính chuẩn (lặp lại) */
     mask-image: 
-        linear-gradient(to right, transparent, black 5%, black 95%, transparentt),
+        linear-gradient(to right, transparent, black 5%, black 95%, transparent),
         linear-gradient(to bottom, transparent, black 5%, black 95%, transparent);
     mask-composite: intersect;
 }
@@ -897,4 +897,5 @@ position: relative;
       font-size: 11px;
     }
 }
+
 
