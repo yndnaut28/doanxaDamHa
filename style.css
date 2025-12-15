@@ -42,7 +42,12 @@ header{
     margin-top: -300px;
     border-radius: 50%;
     z-index: -2; 
-    will-change: transform;
+    background: #e0e0e0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.card:hover::before {
+    opacity: 1;
     background: conic-gradient(transparent, transparent, transparent, #00b7ff, #ff30ff);
     animation: rotate 4s linear infinite;
 }
@@ -897,6 +902,7 @@ position: relative;
       font-size: 11px;
     }
 }
+
 
 
 
