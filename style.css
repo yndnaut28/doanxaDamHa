@@ -204,8 +204,6 @@ input:focus {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.852);
   display: flex;
   flex-direction: column;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px); 
   border: 1px solid #1932A8; 
   z-index: 2;
 }
@@ -923,6 +921,7 @@ position: relative;
       font-size: 11px;
     }
 }
+
 
 
 
