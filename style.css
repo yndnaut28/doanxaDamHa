@@ -892,9 +892,9 @@ position: relative;
         padding: 8px 6px; /* Giảm đệm ngang */
     }
     .search-bar {
-        margin: 20px auto;
-        flex-direction: column; 
-        width: 90%;
+        margin-left: 20px;
+        flex-direction: column; /* Xếp dọc */
+        width: 80%;
     }
     .search-bar input,
     .custom-select {
@@ -927,6 +927,7 @@ position: relative;
       font-size: 11px;
     }
 }
+
 
 
 
